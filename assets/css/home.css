@@ -4,8 +4,10 @@ html, body{
 }
 
 #menu{
+	margin: 1%;
 	z-index: 1;
 	position: relative;
+	text-align: center;
 }
 
 .page-wrapper{
@@ -18,23 +20,11 @@ html, body{
 }
 
 .page{
-	padding-top: 10%;
 	min-width: 100%;
 	height: auto;
+	padding: 10% 5%;
 }
 
 ::-webkit-scrollbar {
 	display: none;
-}
-
-#page1{
-	background-color: red;
-}
-
-#page2{
-	background-color: yellow;
-}
-
-#page3{
-	background-color: blue;
 }
