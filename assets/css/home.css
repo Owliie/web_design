@@ -22,7 +22,11 @@ html, body{
 .page{
 	min-width: 100%;
 	height: auto;
-	padding: 10% 5%;
+	padding: 5% 5%;
+}
+
+.afterHeading{
+	padding-top: 3%;
 }
 
 ::-webkit-scrollbar {
