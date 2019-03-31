@@ -25,7 +25,10 @@
 		</button>
 
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">			
+			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="tasks.html">Tasks</a>
+				</li>	
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Profile name
@@ -46,19 +49,273 @@
 		<h1 class="display-3 text-center" id="header">Your co-workers</h1>
 		<hr>
 		<div class="row afterHeading">
-			<div class="col-5">
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">icon...teammate</li>
-					<li class="list-group-item">icon...teammate</li>
-					<li class="list-group-item">icon...teammate</li>
-				</ul>
-			</div>
-			<div class="col-5 ml-auto">
-				<ul class="list-group list-group-flush">
-					<li class="list-group-item">icon...teammate</li>
-					<li class="list-group-item">icon...teammate</li>
-					<li class="list-group-item">icon...teammate</li>
-				</ul>
+			<div class="card-columns">
+				<div class="card border-info bg-danger text-white">
+					<img src="../assets/images/profile_pic.jpg" class="card-img-top" alt="profile pic">
+					<div class="card-body">
+						<h5 class="card-title">Leader's name</h5>
+						<p class="card-text">Description</p>
+
+						<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target=".leader-modal">More</button>
+					</div>
+
+					<div class="modal fade leader-modal text-info" tabindex="-1" role="dialog" aria-labelledby="leader-modal-description" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="leader-modal-description">Leader's name</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									..................
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card border-info">
+					<img src="../assets/images/profile_pic.jpg" class="card-img-top" alt="profile pic">
+					<div class="card-body">
+						<h5 class="card-title">Worker's name</h5>
+						<p class="card-text">Description</p>
+						<blockquote class="blockquote mb-0 card-body">
+							<footer class="blockquote-footer">
+								<small class="text-muted">Some inspirational quote</small>
+							</footer>
+						</blockquote>
+
+						<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target=".worker1-modal">More</button>
+					</div>
+
+					<div class="modal fade worker1-modal text-info" tabindex="-1" role="dialog" aria-labelledby="worker1-modal-description" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="worker1-modal-description">Worker's name</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									..................
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="card border-info">
+					<img src="../assets/images/profile_pic.jpg" class="card-img-top" alt="profile pic">
+					<div class="card-body">
+						<h5 class="card-title">Worker's name</h5>
+						<p class="card-text">Description</p>
+						<blockquote class="blockquote mb-0 card-body">
+							<footer class="blockquote-footer">
+								<small class="text-muted">Some inspirational quote</small>
+							</footer>
+						</blockquote>
+
+						<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target=".worker2-modal">More</button>
+					</div>
+
+					<div class="modal fade worker2-modal text-info" tabindex="-1" role="dialog" aria-labelledby="worker2-modal-description" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="worker2-modal-description">Worker's name</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									..................
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card border-info">
+					<img src="../assets/images/profile_pic.jpg" class="card-img-top" alt="profile pic">
+					<div class="card-body">
+						<h5 class="card-title">Worker's name</h5>
+						<p class="card-text">Description</p>
+						<blockquote class="blockquote mb-0 card-body">
+							<footer class="blockquote-footer">
+								<small class="text-muted">Some inspirational quote</small>
+							</footer>
+						</blockquote>
+
+						<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target=".worker3-modal">More</button>
+					</div>
+
+					<div class="modal fade worker3-modal text-info" tabindex="-1" role="dialog" aria-labelledby="worker3-modal-description" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="worker3-modal-description">Worker's name</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									..................
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card border-info">
+					<img src="../assets/images/profile_pic.jpg" class="card-img-top" alt="profile pic">
+					<div class="card-body">
+						<h5 class="card-title">Worker's name</h5>
+						<p class="card-text">Description</p>
+						<blockquote class="blockquote mb-0 card-body">
+							<footer class="blockquote-footer">
+								<small class="text-muted">Some inspirational quote</small>
+							</footer>
+						</blockquote>
+
+						<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target=".worker4-modal">More</button>
+					</div>
+
+					<div class="modal fade worker4-modal text-info" tabindex="-1" role="dialog" aria-labelledby="worker4-modal-description" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="worker4-modal-description">Worker's name</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									..................
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card border-info">
+					<img src="../assets/images/profile_pic.jpg" class="card-img-top" alt="profile pic">
+					<div class="card-body">
+						<h5 class="card-title">Worker's name</h5>
+						<p class="card-text">Description</p>
+						<blockquote class="blockquote mb-0 card-body">
+							<footer class="blockquote-footer">
+								<small class="text-muted">Some inspirational quote</small>
+							</footer>
+						</blockquote>
+
+						<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target=".worker5-modal">More</button>
+					</div>
+
+					<div class="modal fade worker5-modal text-info" tabindex="-1" role="dialog" aria-labelledby="worker5-modal-description" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="worker5-modal-description">Worker's name</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									..................
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card border-info">
+					<img src="../assets/images/profile_pic.jpg" class="card-img-top" alt="profile pic">
+					<div class="card-body">
+						<h5 class="card-title">Worker's name</h5>
+						<p class="card-text">Description</p>
+						<blockquote class="blockquote mb-0 card-body">
+							<footer class="blockquote-footer">
+								<small class="text-muted">Some inspirational quote</small>
+							</footer>
+						</blockquote>
+
+						<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target=".worker6-modal">More</button>
+					</div>
+
+					<div class="modal fade worker6-modal text-info" tabindex="-1" role="dialog" aria-labelledby="worker6-modal-description" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="worker6-modal-description">Worker's name</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									..................
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card border-info">
+					<img src="../assets/images/profile_pic.jpg" class="card-img-top" alt="profile pic">
+					<div class="card-body">
+						<h5 class="card-title">Worker's name</h5>
+						<p class="card-text">Description</p>
+						<blockquote class="blockquote mb-0 card-body">
+							<footer class="blockquote-footer">
+								<small class="text-muted">Some inspirational quote</small>
+							</footer>
+						</blockquote>
+
+						<button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target=".worker7-modal">More</button>
+					</div>
+
+					<div class="modal fade worker7-modal text-info" tabindex="-1" role="dialog" aria-labelledby="worker7-modal-description" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="worker7-modal-description">Worker's name</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									..................
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
