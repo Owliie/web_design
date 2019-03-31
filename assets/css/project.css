@@ -2,12 +2,33 @@
 	font-size: 20pt;
 }
 
+.tab-content, .tab-pane{
+	height: 100%;
+}
+
+#warning{
+	display: none;
+}
+
 @media screen and (max-width: 992px) {
 	#header{
 		font-size: 35pt;
 	}
 
 	.nav-tabs a{
+		font-size: 10pt;
+	}
+
+	#desktop{
+		display: none;
+	}
+
+	#warning{
+		color: red;
+		display: block;
+	}
+
+	table>th, table>td{
 		font-size: 10pt;
 	}
 }

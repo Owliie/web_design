@@ -42,37 +42,54 @@
 		</div>
 	</nav>
 
-	<div class="container">
+	<div class="container h-75">
 		<h1 class="display-3 text-center" id="header">Current project</h1>
 		<hr>
 		<nav class="afterHeading nav-justified">
 			<div class="nav nav-tabs" id="nav-tab" role="tablist">
-				<a class="nav-item nav-link active" id="nav-code-tab" data-toggle="tab" href="#nav-code" role="tab" aria-controls="nav-code" aria-selected="true">Upload code</a>
-				<a class="nav-item nav-link" id="nav-team-tab" data-toggle="tab" href="#nav-team" role="tab" aria-controls="nav-team" aria-selected="false">Team</a>
+				<a class="nav-item nav-link active" id="nav-code-tab" data-toggle="tab" href="#nav-code" role="tab" aria-controls="nav-code" aria-selected="true">Code playground</a>
+				<a class="nav-item nav-link" id="nav-uploads-tab" data-toggle="tab" href="#nav-uploads" role="tab" aria-controls="nav-uploads" aria-selected="false">Uploads</a>
 				<a class="nav-item nav-link" id="nav-description-tab" data-toggle="tab" href="#nav-description" role="tab" aria-controls="nav-description" aria-selected="false">Description</a>
 			</div>
 		</nav>
 		<div class="tab-content" id="nav-tabContent">
 			<div class="tab-pane fade show active" id="nav-code" role="tabpanel" aria-labelledby="nav-code-tab">
-
+				<div class="afterHeading h-100">
+					<h3 id="warning">Code snippet available only on desktop devices!</h3>
+					<iframe class="w-100 h-100" id="desktop" src="http://code.sololearn.com"></iframe>
+				</div>
 			</div>
-			<div class="tab-pane fade" id="nav-team" role="tabpanel" aria-labelledby="nav-team-tab">
+			<div class="tab-pane fade" id="nav-uploads" role="tabpanel" aria-labelledby="nav-uploads-tab">
 				<div class="row afterHeading">
-				<div class="col-5">
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">icon...teammate</li>
-						<li class="list-group-item">icon...teammate</li>
-						<li class="list-group-item">icon...teammate</li>
-					</ul>
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">Name</th>
+									<th scope="col">Comment</th>
+									<th scope="col">Commited</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">~teammate name~:</th>
+									<td>~their comment~</td>
+									<td><span class="badge badge-primary badge-pill">~X time~ ago</span></td>
+								</tr>
+								<tr>
+									<th scope="row">~teammate name~:</th>
+									<td>~their comment~</td>
+									<td><span class="badge badge-primary badge-pill">~X time~ ago</span></td>
+								</tr>
+								<tr>
+									<th scope="row">~teammate name~:</th>
+									<td>~their comment~</td>
+									<td><span class="badge badge-primary badge-pill">~X time~ ago</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<div class="col-5 ml-auto">
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">icon...teammate</li>
-						<li class="list-group-item">icon...teammate</li>
-						<li class="list-group-item">icon...teammate</li>
-					</ul>
-				</div>
-			</div>
 			</div>
 			<div class="tab-pane fade" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab">
 				<div class="afterHeading">
