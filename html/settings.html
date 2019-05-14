@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GitAlike</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+	<script type="text/javascript" src="../assets/js/home.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+</head>
+<body>
+	<button class="btn btn-outline-dark" id="menu"><ion-icon name="menu"></ion-icon></button>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="home.html">GitAlike</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="tasks.html">Tasks</a>
+				</li>		
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Profile name
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="project.html">Project</a>
+						<a class="dropdown-item" href="team.html">Team</a>
+						<a class="dropdown-item" href="settings.html">Settings</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Log Out</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<h1>Manage your account</h1>
+
+		<div>
+			<h4>Change your account settings</h4>
+			<hr />
+			<div class="row">
+				<div class="col-3">
+					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
+
+						<a class="nav-link" id="v-pills-password-tab" data-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false">Password</a>
+
+						<a class="nav-link" id="v-pills-personal-data-tab" data-toggle="pill" href="#v-pills-personal-data" role="tab" aria-controls="v-pills-personal-data" aria-selected="false">Personal data</a>
+					</div>
+				</div>
+				<div class="col-9">
+					<div class="tab-content" id="v-pills-tabContent">
+						<div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+							<h4>Profile</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<form id="profile-form" method="post">
+										<div class="form-group">
+											<label for="username">Username</label>
+											<input id="username" class="form-control" disabled />
+										</div>
+										<div class="form-group">
+											<label for="email">Email</label>
+											<div class="input-group">
+												<input id="email" class="form-control" />
+												<span class="input-group-addon" aria-hidden="true"><span class="glyphicon glyphicon-ok text-success"></span></span>
+											</div>
+											<span for="email" class="text-danger"></span>
+										</div>
+										<div class="form-group">
+											<label for="phoneNumber">Phone number</label>
+											<input id="phoneNumber" class="form-control" />
+											<span for="phoneNumber" class="text-danger"></span>
+										</div>
+										<button id="update-profile-button" type="submit" class="btn btn-primary">Save</button>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
+							<h4>Change password</h4>
+							<div class="row">
+							    <div class="col-md-6">
+							        <form id="change-password-form" method="post">
+							            <div class="form-group">
+							                <label for="oldPassword">Old password</label>
+							                <input id="oldPassword" class="form-control" />
+							                <span for="oldPassword" class="text-danger"></span>
+							            </div>
+							            <div class="form-group">
+							                <label for="newPassword">New password</label>
+							                <input id="newPassword" class="form-control" />
+							                <span for="newPassword" class="text-danger"></span>
+							            </div>
+							            <div class="form-group">
+							                <label for="confirmPassword">Confirm password</label>
+							                <input id="confirmPassword" class="form-control" />
+							                <span for="confirmPassword" class="text-danger"></span>
+							            </div>
+							            <button type="submit" class="btn btn-primary">Update password</button>
+							        </form>
+							    </div>
+							</div>
+						</div>
+
+						<div class="tab-pane fade" id="v-pills-personal-data" role="tabpanel" aria-labelledby="v-pills-personal-data-tab">
+							<h4>Personal data</h4>
+
+							<div class="row">
+							    <div class="col-md-6">
+							        <p>Your account contains personal data that you have given us. This page allows you to download or delete that data.</p>
+							        <p>
+							            <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
+							        </p>
+							        <form id="download-data" method="post" class="form-group">
+							            <button class="btn btn-info" type="submit">Download</button>
+							        </form>
+							        <p>
+							            <a id="deleteBtn" class="btn btn-danger">Delete</a>
+							        </p>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

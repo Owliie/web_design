@@ -48,10 +48,47 @@
 	</nav>
 
 	<div class="container h-75">
-		<h1 class="display-3 text-center" id="header">Available tasks</h1>
+		<div class="row align-items-center ">
+			<div class="col-9">
+				<h1 class="display-3 text-center" id="header">Available tasks</h1>
+			</div>
+			<div class="col-3">
+				<button type="button" class="btn btn-outline-info btn-lg" data-toggle="modal" data-target="#addTaskModal">
+				Add new task
+				</button>
+
+				<div class="modal fade" id="addTaskModal" tabindex="-1" role="dialog" aria-labelledby="addTaskModalTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalCenterTitle">New task</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+
+								<label for="taskTitle">Task title</label>
+					   			<div class="input-group mb-3">
+								  	<input id="taskTitle" type="text" class="form-control" placeholder="Task title"  aria-describedby="basic-addon1">
+								</div>
+
+								<label for="contentTask">Task content</label>
+								<div class="input-group">
+								  	<textarea id="contentTask" class="form-control" placeholder="Task content"></textarea>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-outline-success" onclick="addNewTask()">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<hr>
 		<div class="row afterHeading bg-dark h-100">
-			<div class="d-flex flex-wrap justify-content-around align-items-start w-100">
+			<div id="tasks-container" class="d-flex flex-wrap justify-content-around align-items-start w-100">
 
 				<div role="alert" aria-live="assertive" aria-atomic="true" class="toast m-3" data-autohide="false" id="task1">
 					<div class="toast-header bg-warning">
@@ -123,8 +160,6 @@
 						Task's content
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 	</div>
