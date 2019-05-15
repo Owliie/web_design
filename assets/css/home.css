@@ -26,9 +26,32 @@ html, body{
 }
 
 .afterHeading{
-	padding-top: 3%;
+	padding-top: 2%;
+}
+
+.afterHeading > p{
+	font-size: 15pt;
 }
 
 ::-webkit-scrollbar {
 	display: none;
+}
+
+#why-list{
+	width: 50%;
+}
+
+@media screen and (max-width: 1024px){
+	.page-wrapper{
+		display: block;
+		margin-top: 10%;
+	}
+	
+	.display-1{
+		font-size: 70pt !important;
+	}
+
+	#why-list{
+		width: 100%;
+	}
 }

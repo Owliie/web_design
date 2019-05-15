@@ -10,15 +10,11 @@
 	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	  crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
-	<script type="text/javascript" src="../assets/js/home.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
 </head>
 <body>
-	<button class="btn btn-outline-dark" id="menu"><ion-icon name="menu"></ion-icon></button>
-	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="home.html">GitAlike</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +28,7 @@
 				</li>		
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Profile name
+					Lambert
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 						<a class="dropdown-item" href="project.html">Project</a>
@@ -55,7 +51,7 @@
 			<div class="row">
 				<div class="col-3">
 					<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-						<a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
+						<a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
 
 						<a class="nav-link" id="v-pills-password-tab" data-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false">Password</a>
 
@@ -79,14 +75,20 @@
 												<input id="email" class="form-control" />
 												<span class="input-group-addon" aria-hidden="true"><span class="glyphicon glyphicon-ok text-success"></span></span>
 											</div>
-											<span for="email" class="text-danger"></span>
 										</div>
 										<div class="form-group">
 											<label for="phoneNumber">Phone number</label>
 											<input id="phoneNumber" class="form-control" />
-											<span for="phoneNumber" class="text-danger"></span>
 										</div>
-										<button id="update-profile-button" type="submit" class="btn btn-primary">Save</button>
+										<div class="form-group">
+											<div class="input-group">
+											  	<div class="custom-file">
+											    	<input type="file" class="custom-file-input" id="inputGroupFile">
+											    	<label class="custom-file-label" for="inputGroupFile">Change profile picture</label>
+											  	</div>
+											</div>
+										</div>
+										<button id="update-profile-button" type="submit" class="btn btn-outline-success">Save</button>
 									</form>
 								</div>
 							</div>
@@ -100,17 +102,14 @@
 							            <div class="form-group">
 							                <label for="oldPassword">Old password</label>
 							                <input id="oldPassword" class="form-control" />
-							                <span for="oldPassword" class="text-danger"></span>
 							            </div>
 							            <div class="form-group">
 							                <label for="newPassword">New password</label>
 							                <input id="newPassword" class="form-control" />
-							                <span for="newPassword" class="text-danger"></span>
 							            </div>
 							            <div class="form-group">
 							                <label for="confirmPassword">Confirm password</label>
 							                <input id="confirmPassword" class="form-control" />
-							                <span for="confirmPassword" class="text-danger"></span>
 							            </div>
 							            <button type="submit" class="btn btn-primary">Update password</button>
 							        </form>

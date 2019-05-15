@@ -10,6 +10,14 @@
 	display: none;
 }
 
+.afterHeading{
+	padding-top: 2%;
+}
+
+.afterHeading > p{
+	font-size: 15pt;
+}
+
 @media screen and (max-width: 992px) {
 	#header{
 		font-size: 35pt;
