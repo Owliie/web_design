@@ -38,13 +38,13 @@ function scrollToPage() {
 function nextPage() {
 	current_page++;
 	validate();
-	let element = "#page" + current_page;
+	let next_page = "#page" + current_page;
 	$('.page-wrapper').animate({
-		scrollLeft: "+=" + $(element).offset().left
+		scrollLeft: "+=" + $(next_page).offset().left
 	}, 500, function () {
 		$(".page").bind("mousewheel", scrollToPage());
 	});
-	console.log(element + " " + $(element).offset().left);
+	console.log(next_page + " " + $(next_page).offset().left);
 	console.log('scrolling up !');
 }
 
@@ -58,13 +58,13 @@ function previousPage() {
 		showMenu();
 	}
 
-	let element = "#page" + current_page;
+	let perv_page = "#page" + current_page;
 	$('.page-wrapper').animate({
-		scrollLeft: "+=" + $(element).offset().left
+		scrollLeft: "+=" + $(perv_page).offset().left
 	}, 500, function () {
 		$(".page").bind("mousewheel", scrollToPage());
 	});
-	console.log(element + " " + $(element).offset().left);
+	console.log(perv_page + " " + $(perv_page).offset().left);
 	console.log('scrolling down !');
 }
 
